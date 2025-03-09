@@ -1,0 +1,106 @@
+/* Modern CSS for Thai Assignment Page */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap');
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for content */
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 3rem;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Header Styling */
+label {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #3a4c8c;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+  background: #4e6bff;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-family: 'Prompt', sans-serif;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(78, 107, 255, 0.3);
+  transition: all 0.3s ease;
+  margin: 1.5rem 0;
+}
+
+button:hover {
+  background: #3a56e8;
+  box-shadow: 0 6px 20px rgba(78, 107, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 10px rgba(78, 107, 255, 0.3);
+}
+
+/* Output Area Styling */
+#data {
+  background-color: #f8f9ff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  min-height: 100px;
+  width: 100%;
+  border-left: 4px solid #4e6bff;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 2rem;
+  }
+  
+  label {
+    font-size: 1.5rem;
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 0.7rem 1.8rem;
+  }
+}
